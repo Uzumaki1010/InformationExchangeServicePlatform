@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InformationExchangeServicePlatform(暂定</string>
+    <string name="title_home">我的</string>
+    <string name="title_dashboard">学习资源</string>
+    <string name="title_notifications">校内通知</string>
+    <string name="title_tasks">任务</string>
+    <string name="title_books">二手书</string>
+</resources>
