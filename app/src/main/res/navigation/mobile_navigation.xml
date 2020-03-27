@@ -6,10 +6,22 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.informationexchangeserviceplatform.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.informationexchangeserviceplatform.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.example.informationexchangeserviceplatform.ui.tasks.TasksFragment"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_tasks" />
+
+    <fragment
+        android:id="@+id/navigation_books"
+        android:name="com.example.informationexchangeserviceplatform.ui.books.BooksFragment"
+        android:label="@string/title_books"
+        tools:layout="@layout/fragment_books" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -18,8 +30,9 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.informationexchangeserviceplatform.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_home"
+        android:name="com.example.informationexchangeserviceplatform.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
 </navigation>
