@@ -15,12 +15,20 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.informationexchangeserviceplatform.MainActivity;
 import com.example.informationexchangeserviceplatform.R;
+import com.example.informationexchangeserviceplatform.ui.BooksDetailActivity;
+import com.example.informationexchangeserviceplatform.ui.ResourcesDetailActivity;
+import com.example.informationexchangeserviceplatform.ui.TasksDetailActivity;
 import com.example.informationexchangeserviceplatform.ui.login.LoginActivity;
 
 public class HomeFragment extends Fragment {
 
     public static final int REQUEST_CODE_Login = 901;
+    public static final int REQUEST_CODE_TasksDetail = 902;
+    public static final int REQUEST_CODE_BooksDetail = 904;
+    public static final int REQUEST_CODE_ResourcesDetail = 905;
     private HomeViewModel homeViewModel;
+    private TextView textViewBooks,textViewTasks,textViewResources;
+    private TextView textViewLogIn;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -37,8 +45,12 @@ public class HomeFragment extends Fragment {
         });
 
          */
-        TextView textViewLogIn;
+        textViewTasks=root.findViewById(R.id.text_view_tasks);
+        textViewBooks=root.findViewById(R.id.text_view_books);
+        textViewResources=root.findViewById(R.id.text_view_resources);
         textViewLogIn=root.findViewById(R.id.text_view_LogIn);
+
+        /*登录*/
         textViewLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +58,31 @@ public class HomeFragment extends Fragment {
                 startActivityForResult(intent,REQUEST_CODE_Login);
             }
         });
+
+        textViewTasks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), TasksDetailActivity.class);
+                startActivityForResult(intent, REQUEST_CODE_TasksDetail);
+            }
+        });
+
+        textViewBooks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), BooksDetailActivity.class);
+                startActivityForResult(intent, REQUEST_CODE_BooksDetail);
+            }
+        });
+
+        textViewResources.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), ResourcesDetailActivity.class);
+                startActivityForResult(intent, REQUEST_CODE_ResourcesDetail);
+            }
+        });
+
         return root;
     }
 }
