@@ -1,6 +1,6 @@
-package com.example.informationexchangeserviceplatform.data;
+package com.example.informationexchangeserviceplatform.data.model;
 
-import com.example.informationexchangeserviceplatform.data.model.LoggedInUser;
+import com.example.informationexchangeserviceplatform.data.Result;
 
 /**
  * Class that requests authentication and user information from the remote data source and

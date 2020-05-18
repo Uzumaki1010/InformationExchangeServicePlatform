@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
-import com.example.informationexchangeserviceplatform.data.LoginRepository;
+import com.example.informationexchangeserviceplatform.data.model.LoginRepository;
 import com.example.informationexchangeserviceplatform.data.Result;
 import com.example.informationexchangeserviceplatform.data.model.LoggedInUser;
 import com.example.informationexchangeserviceplatform.R;
