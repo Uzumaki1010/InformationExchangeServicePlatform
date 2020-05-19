@@ -1,4 +1,4 @@
-package com.example.informationexchangeserviceplatform.data;
+package com.example.informationexchangeserviceplatform.data.model;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

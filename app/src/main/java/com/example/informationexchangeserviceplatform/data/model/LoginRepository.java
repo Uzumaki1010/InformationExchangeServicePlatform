@@ -1,7 +1,5 @@
 package com.example.informationexchangeserviceplatform.data.model;
 
-import com.example.informationexchangeserviceplatform.data.Result;
-
 /**
  * Class that requests authentication and user information from the remote data source and
  * maintains an in-memory cache of login status and user credentials information.

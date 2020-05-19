@@ -1,8 +1,5 @@
 package com.example.informationexchangeserviceplatform.data.model;
 
-import com.example.informationexchangeserviceplatform.data.Result;
-import com.example.informationexchangeserviceplatform.data.model.LoggedInUser;
-
 import java.io.IOException;
 
 /**
